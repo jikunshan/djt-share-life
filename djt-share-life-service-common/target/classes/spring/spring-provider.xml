@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+    <context:property-placeholder location="classpath:config/log4j.properties" ignore-unresolvable="true" />
+
+    <import resource="classpath*:spring/spring-context.xml" />
+
+    <dubbo:application name="djt-share-life-service-common" />
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" file="C:/djt-share-life-service-common/dubbo.cache" group=""/>
+    <dubbo:protocol name="dubbo" port="-1" accesslog="true"/>
+
+    <dubbo:service interface="com.djt.share.life.api.service.IUserService" ref="restIUserService" group="restIUserService"></dubbo:service>
+</beans>
