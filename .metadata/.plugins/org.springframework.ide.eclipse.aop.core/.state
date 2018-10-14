@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="djt-share-life-orm"/>
+<aop-project name="djt-share-life-support"/>
+<aop-project name="djt-share-life-center"/>
+<aop-project name="djt-share-life-service-common"/>
+<aop-project name="djt-share-life-service-basic"/>
+<aop-project name="djt-share-life-api"/>
+</aop-reference-model>

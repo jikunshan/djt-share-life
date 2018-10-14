@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Sun Oct 14 12:44:28 CST 2018
+org.eclipse.jst.jee.server\:/binary\:E\:\\eclipse-workspace\\meavn_libs\\.m2\\repository\\org\\springframework\\spring-web\\4.0.0.RELEASE\\spring-web-4.0.0.RELEASE.jar=D\:\\Server\\apache_2\\apache-tomcat-7.0.82\\webapps\\djt-share-life-center\\WEB-INF\\lib\\spring-web-4.0.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:djt-share-life-api=D\:\\Server\\apache_2\\apache-tomcat-7.0.82\\webapps\\djt-share-life-center\\WEB-INF\\lib\\djt-share-life-api-2.0.jar
+org.eclipse.jst.jee.server\:djt-share-life-center=D\:\\Server\\apache_2\\apache-tomcat-7.0.82\\webapps\\djt-share-life-center
+org.eclipse.jst.j2ee.server\:djt-share-life-support=D\:\\Server\\apache_2\\apache-tomcat-7.0.82\\webapps\\djt-share-life-center\\WEB-INF\\lib\\djt-share-life-support-2.0.jar
