@@ -25,8 +25,6 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class ShareLifeExceptionResolver implements HandlerExceptionResolver {
 
-	Log log = (Log) LogFactory.getLog(getClass());
-
     @Resource(name = "messageConverter")
     private FastJsonHttpMessageConverter messageConverter;
 
