@@ -13,4 +13,20 @@ public class UserPo extends BasePo {
 
     private String userName;
 
+	public Long getUsId() {
+		return usId;
+	}
+
+	public void setUsId(Long usId) {
+		this.usId = usId;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
 }

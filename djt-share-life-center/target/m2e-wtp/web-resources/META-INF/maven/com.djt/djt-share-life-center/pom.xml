@@ -15,6 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+<<<<<<< HEAD
 
     <profiles>
         <profile>
@@ -54,6 +55,8 @@
         </profile>
     </profiles>
 
+=======
+>>>>>>> master
     <dependencies>
         <dependency>
             <groupId>com.djt</groupId>
@@ -166,9 +169,17 @@
 
     </dependencies>
     <build>
+<<<<<<< HEAD
         <plugins>
             <!-- jetty插件 -->
             <plugin>
+=======
+    	<filters>
+            <filter>src/main/env/${env-environment}/config.properties</filter>
+        </filters>
+        <plugins>
+            <!-- <plugin>
+>>>>>>> master
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.26</version>
@@ -182,7 +193,11 @@
                         </connector>
                     </connectors>
                 </configuration>
+<<<<<<< HEAD
             </plugin>
+=======
+            </plugin> -->
+>>>>>>> master
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -208,12 +223,15 @@
         </plugins>
         <resources>
             <resource>
+<<<<<<< HEAD
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.xml</include>
                 </includes>
             </resource>
             <resource>
+=======
+>>>>>>> master
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
@@ -224,7 +242,11 @@
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
+<<<<<<< HEAD
                     <include>**/*.*</include>
+=======
+                    <include>**/*.xml</include>
+>>>>>>> master
                 </includes>
             </resource>
         </resources>
