@@ -963,3 +963,183 @@ java.io.IOException: Cannot overwrite: E:\eclipse-workspace\myself-workspace\djt
 2018-10-14 12:48:01,832 [Worker-68: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
 2018-10-14 12:48:01,832 [Worker-68: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-10-14 12:48:01,832 [Worker-68: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-common\src\test\resources
+2018-10-14 12:58:54,800 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-10-14 12:59:10,077 [Worker-14: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.djt:djt-share-life-support:2.0 @ E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-support\pom.xml.
+2018-10-14 12:59:11,416 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:11,420 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-14 12:59:11,422 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:11,423 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-support\src\test\resources
+2018-10-14 12:59:12,087 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.djt:djt-share-life-api:2.0 @ E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\pom.xml.
+2018-10-14 12:59:12,595 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:12,684 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:13,201 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:13,201 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-14 12:59:13,203 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:13,203 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-14 12:59:13,352 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.djt:djt-share-life-orm:2.0 @ E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-orm\pom.xml.
+2018-10-14 12:59:13,675 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-14 12:59:13,678 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:14,059 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:14,060 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-14 12:59:14,069 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:14,069 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-orm\src\test\resources
+2018-10-14 12:59:14,180 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.djt:djt-share-life-service-basic:2.0 @ E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-basic\pom.xml.
+2018-10-14 12:59:14,389 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-14 12:59:14,390 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:14,394 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-orm: com.djt:djt-share-life-orm:2.0 with classifier  to /djt-share-life-orm/target/classes
+2018-10-14 12:59:15,357 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:15,359 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-10-14 12:59:15,432 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:15,432 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-basic\src\test\resources
+2018-10-14 12:59:15,621 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.djt:djt-share-life-service-common:2.0 @ E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-common\pom.xml.
+2018-10-14 12:59:15,900 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-14 12:59:15,903 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:15,909 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-service-basic: com.djt:djt-share-life-service-basic:2.0 with classifier  to /djt-share-life-service-basic/target/classes
+2018-10-14 12:59:15,910 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-orm: com.djt:djt-share-life-orm:2.0 with classifier  to /djt-share-life-orm/target/classes
+2018-10-14 12:59:16,665 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:16,666 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-14 12:59:16,672 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:16,672 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-common\src\test\resources
+2018-10-14 12:59:17,718 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.djt:djt-share-life-center:2.0 @ E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-center\pom.xml.
+2018-10-14 12:59:17,935 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-14 12:59:17,937 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:18,003 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:18,192 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-14 12:59:18,194 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:18,568 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-14 12:59:18,572 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-14 12:59:18,836 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:18,836 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-14 12:59:18,838 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-14 12:59:18,845 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-14 12:59:18,845 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-center\src\test\resources
+2018-10-15 22:03:19,229 [Worker-7: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-10-15 22:03:33,630 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 22:03:33,633 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 22:03:33,640 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-orm: com.djt:djt-share-life-orm:2.0 with classifier  to /djt-share-life-orm/target/classes
+2018-10-15 22:03:34,084 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 22:03:34,089 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-10-15 22:03:34,131 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 22:03:34,131 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-basic\src\test\resources
+2018-10-15 22:03:35,721 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 22:03:35,723 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 22:03:35,728 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-service-basic: com.djt:djt-share-life-service-basic:2.0 with classifier  to /djt-share-life-service-basic/target/classes
+2018-10-15 22:03:35,728 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-orm: com.djt:djt-share-life-orm:2.0 with classifier  to /djt-share-life-orm/target/classes
+2018-10-15 22:03:35,734 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 22:03:35,735 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-15 22:03:35,813 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 22:03:35,813 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-common\src\test\resources
+2018-10-15 22:11:18,823 [Worker-26: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 22:11:18,827 [Worker-26: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 22:26:27,566 [Worker-5: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-10-15 22:26:30,860 [Worker-6: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 22:26:30,863 [Worker-6: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 22:26:31,460 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 22:26:31,469 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-15 22:26:31,521 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-15 22:26:31,601 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 22:26:31,601 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-center\src\test\resources
+2018-10-15 23:27:25,536 [Worker-45: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 23:27:25,541 [Worker-45: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 23:27:25,547 [Worker-45: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-orm: com.djt:djt-share-life-orm:2.0 with classifier  to /djt-share-life-orm/target/classes
+2018-10-15 23:28:17,337 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:28:17,380 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-15 23:28:17,382 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-15 23:28:17,387 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:28:17,387 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-center\src\test\resources
+2018-10-15 23:29:49,364 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:29:49,365 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-15 23:29:49,366 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-15 23:29:49,370 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:29:49,370 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-center\src\test\resources
+2018-10-15 23:29:49,420 [Worker-43: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of djt-share-life-center
+2018-10-15 23:29:49,421 [Worker-43: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for djt-share-life-center
+2018-10-15 23:29:49,428 [Worker-43: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.4.1 is missing, no dependency information available
+2018-10-15 23:29:49,459 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:02,109 [Worker-43: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 23:31:02,143 [Worker-43: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for djt-share-life-center
+2018-10-15 23:31:02,427 [Worker-43: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 23:31:02,430 [Worker-43: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 23:31:02,712 [Worker-43: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 23:31:02,713 [Worker-43: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 23:31:02,717 [Worker-43: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-service-basic: com.djt:djt-share-life-service-basic:2.0 with classifier  to /djt-share-life-service-basic/target/classes
+2018-10-15 23:31:02,717 [Worker-43: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-orm: com.djt:djt-share-life-orm:2.0 with classifier  to /djt-share-life-orm/target/classes
+2018-10-15 23:31:03,234 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:03,234 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-15 23:31:03,236 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:03,236 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-support\src\test\resources
+2018-10-15 23:31:04,014 [Worker-45: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 23:31:04,026 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,026 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:31:04,028 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,028 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:31:04,127 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,128 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-15 23:31:04,132 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,132 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-orm\src\test\resources
+2018-10-15 23:31:04,161 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,162 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2018-10-15 23:31:04,176 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,176 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-basic\src\test\resources
+2018-10-15 23:31:04,263 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,265 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-15 23:31:04,271 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,272 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-service-common\src\test\resources
+2018-10-15 23:31:04,772 [Worker-45: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-api: com.djt:djt-share-life-api:2.0 with classifier  to /djt-share-life-api/target/classes
+2018-10-15 23:31:04,774 [Worker-45: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/djt-share-life-support: com.djt:djt-share-life-support:2.0 with classifier  to /djt-share-life-support/target/classes
+2018-10-15 23:31:04,797 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,797 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-15 23:31:04,799 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-10-15 23:31:04,815 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:04,816 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-center\src\test\resources
+2018-10-15 23:31:04,816 [Worker-45: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of djt-share-life-center
+2018-10-15 23:31:04,816 [Worker-45: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for djt-share-life-center
+2018-10-15 23:31:04,824 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:21,265 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:21,266 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:31:21,267 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:21,267 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:31:25,683 [Worker-51: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:25,684 [Worker-51: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:31:25,685 [Worker-51: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:25,685 [Worker-51: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:31:30,011 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:30,011 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:31:30,012 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:30,012 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:31:38,125 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:38,125 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:31:38,126 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:38,127 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:31:50,614 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:50,614 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:31:50,615 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:31:50,615 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:32:04,545 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:04,545 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:32:04,546 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:04,546 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:32:13,159 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:13,159 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:32:13,160 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:13,160 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:32:23,748 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:23,748 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:32:23,751 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:23,751 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:32:32,653 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:32,653 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:32:32,654 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:32,654 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:32:36,267 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:36,267 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:32:36,268 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:36,268 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:32:50,363 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:50,364 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:32:50,365 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:50,365 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
+2018-10-15 23:32:54,288 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:54,289 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\main\resources
+2018-10-15 23:32:54,290 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-15 23:32:54,290 [Worker-50: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\eclipse-workspace\myself-workspace\djt-share-life\djt-share-life-api\src\test\resources
