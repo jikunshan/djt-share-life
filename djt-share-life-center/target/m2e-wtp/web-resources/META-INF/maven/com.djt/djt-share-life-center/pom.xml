@@ -15,6 +15,51 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <build>
+                <filters>
+                    <filter>profile.dev.properties</filter>
+                </filters>
+            </build>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>test</id>
+            <build>
+                <filters>
+                    <filter>profile.test.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>uat</id>
+            <build>
+                <filters>
+                    <filter>profile.uat.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>prd</id>
+            <build>
+                <filters>
+                    <filter>profile.prd.properties</filter>
+                </filters>
+            </build>
+        </profile>
+    </profiles>
+
+=======
+>>>>>>> master
+>>>>>>> 7796bf836d6d29e0dbf13ce63fc641063e3ba780
     <dependencies>
         <dependency>
             <groupId>com.djt</groupId>
@@ -127,11 +172,23 @@
 
     </dependencies>
     <build>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <plugins>
+            <!-- jetty插件 -->
+            <plugin>
+=======
+>>>>>>> 7796bf836d6d29e0dbf13ce63fc641063e3ba780
     	<filters>
             <filter>src/main/env/${env-environment}/config.properties</filter>
         </filters>
         <plugins>
             <!-- <plugin>
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> 7796bf836d6d29e0dbf13ce63fc641063e3ba780
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.26</version>
@@ -145,7 +202,15 @@
                         </connector>
                     </connectors>
                 </configuration>
+<<<<<<< HEAD
             </plugin> -->
+=======
+<<<<<<< HEAD
+            </plugin>
+=======
+            </plugin> -->
+>>>>>>> master
+>>>>>>> 7796bf836d6d29e0dbf13ce63fc641063e3ba780
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -171,6 +236,18 @@
         </plugins>
         <resources>
             <resource>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+=======
+>>>>>>> master
+>>>>>>> 7796bf836d6d29e0dbf13ce63fc641063e3ba780
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
@@ -181,7 +258,15 @@
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
+<<<<<<< HEAD
                     <include>**/*.xml</include>
+=======
+<<<<<<< HEAD
+                    <include>**/*.*</include>
+=======
+                    <include>**/*.xml</include>
+>>>>>>> master
+>>>>>>> 7796bf836d6d29e0dbf13ce63fc641063e3ba780
                 </includes>
             </resource>
         </resources>
