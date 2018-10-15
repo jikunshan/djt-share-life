@@ -1,2 +1,0 @@
-INDEX VERSION 1.4+E:\eclipse-workspace\myself-workspace\djt-share-life\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2668902448.index
