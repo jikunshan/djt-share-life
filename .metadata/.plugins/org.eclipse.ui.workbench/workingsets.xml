@@ -18,4 +18,5 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/djt-share-life-center" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1539488341366_2" label="Window Working Set" name="Aggregate for window 1539488341366"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1539493131071_4" label="Window Working Set" name="Aggregate for window 1539493131071"/>
 </workingSetManager>
