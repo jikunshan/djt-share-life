@@ -1,0 +1,27 @@
+@startuml
+title
+Web用户登录流程图
+end title
+
+participant 用户
+participant WEB系统
+participant SERVICE服务
+
+用户 -> WEB系统 : 登录请求
+activate 用户
+activate WEB系统
+WEB系统 -> SERVICE服务 : 1、校验账户是否被锁定
+activate SERVICE服务
+SERVICE服务--> WEB系统  : 返回结果
+deactivate SERVICE服务
+WEB系统 -> SERVICE服务 : 2、次数校验(5分钟内/超3次登录失败/输入验证码)
+activate SERVICE服务
+SERVICE服务--> WEB系统  : 返回校验结果
+deactivate SERVICE服务
+WEB系统 -> SERVICE服务 : 3、登录信息校验
+activate SERVICE服务
+SERVICE服务 -> SERVICE服务 : 4、记录登录次数、状态、时间、锁定状态等
+SERVICE服务 --> WEB系统 : 5、返回登录结果
+deactivate SERVICE服务
+WEB系统 --> 用户 : 返回登录结果
+@enduml
