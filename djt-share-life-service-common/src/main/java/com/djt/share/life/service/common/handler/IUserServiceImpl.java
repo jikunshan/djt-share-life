@@ -18,7 +18,6 @@ public class IUserServiceImpl implements IUserService {
 
     @Override
     public UserVo get(UserDto userDto) {
-        return new UserVo("djt");
-//        return userMapper.selectUserInfo(userDto);
+        return userMapper.selectUserInfo(userDto);
     }
 }

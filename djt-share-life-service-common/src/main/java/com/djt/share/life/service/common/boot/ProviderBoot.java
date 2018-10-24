@@ -12,7 +12,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ProviderBoot {
     private final static Logger logger = LoggerFactory.getLogger(ProviderBoot.class);
 
-    public static void serverBoot() {
+    @SuppressWarnings("resource")
+	public static void serverBoot() {
         PropertyConfigurator.configure(ClassLoaderUtils.getAbsolutePathByResource("config/log4j.properties").getPath());
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring/spring-provider.xml"});
         context.start();
