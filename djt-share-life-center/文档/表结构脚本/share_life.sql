@@ -8,7 +8,7 @@ CREATE TABLE `djt_share_life_user` (
   `UPDATE_TIME` datetime NOT NULL COMMENT '最后更新时间',
   `STATUS` tinyint(1) NOT NULL DEFAULT '1' COMMENT '用户状态（1=正常、2=冻结、3=注销）',
   `ENABLED` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否启用,1启用 0停用',
-  PRIMARY KEY (`US_ID`)
+  PRIMARY KEY (`USER_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户信息表';
 
 

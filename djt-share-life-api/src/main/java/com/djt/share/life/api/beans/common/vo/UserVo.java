@@ -8,13 +8,6 @@ import lombok.NoArgsConstructor;
  */
 @NoArgsConstructor
 public class UserVo extends UserPo {
+	private static final long serialVersionUID = 1302910218103474220L;
 
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-	public UserVo(String userName) {
-        super.setUserName(userName);
-    }
 }

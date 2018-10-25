@@ -1,6 +1,7 @@
 package com.djt.share.life.orm;
 
 import com.djt.share.life.api.beans.common.dto.UserDto;
+import com.djt.share.life.api.beans.common.po.UserPo;
 import com.djt.share.life.api.beans.common.vo.UserVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -16,5 +17,13 @@ public interface IUserMapper {
      * @param userDto
      * @return
      */
-    UserVo selectUserInfo(@Param("dto") UserDto userDto);
+    UserVo restGet(@Param("dto") UserDto userDto);
+
+    /**
+     * 保存用户信息
+     *
+     * @param po
+     * @return
+     */
+    Integer restInsert(@Param("po") UserPo po);
 }
