@@ -1,7 +1,6 @@
 package com.djt.share.life.service.common.handler;
 
 import com.djt.share.life.api.beans.common.dto.UserDto;
-import com.djt.share.life.api.beans.common.po.UserPo;
 import com.djt.share.life.api.beans.common.vo.UserVo;
 import com.djt.share.life.api.service.IUserService;
 import com.djt.share.life.orm.IUserMapper;
