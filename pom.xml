@@ -6,7 +6,32 @@
     <version>2.0</version>
     <packaging>pom</packaging>
     <name>djt-share-life</name>
-
+	<profiles>
+		<profile>
+			<id>dat</id>
+			<properties>
+				<env>dat</env>
+				<env.version>-SNAPSHOT</env.version>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>stg</id>
+			<properties>
+				<env>stg</env>
+				<env.version></env.version>
+			</properties>
+		</profile>
+		<profile>
+			<id>prd</id>
+			<properties>
+				<env>prd</env>
+				<env.version></env.version>
+			</properties>
+		</profile>
+	</profiles>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -732,7 +757,8 @@
         <!--基础服务-->
         <module>djt-share-life-service-common</module>
         <module>djt-share-life-center</module>
-
-
+		<!-- 数据库基包和客户端 -->
+		<module>djt-share-life-db</module>
+		<module>djt-share-life-db-client</module>
     </modules>
 </project>
