@@ -14,4 +14,12 @@ public interface IUserService {
      * @return
      */
     UserVo get(UserDto userDto);
+
+    /**
+     * 新增用户信息
+     *
+     * @param userDto
+     * @return
+     */
+    boolean save(UserDto userDto);
 }

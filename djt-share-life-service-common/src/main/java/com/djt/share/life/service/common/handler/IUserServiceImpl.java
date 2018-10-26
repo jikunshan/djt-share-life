@@ -17,7 +17,13 @@ public class IUserServiceImpl implements IUserService {
     private IUserMapper userMapper;
 
     @Override
-    public UserVo get(UserDto userDto) {
-        return userMapper.selectUserInfo(userDto);
+    public UserVo get(UserDto dto) {
+        return userMapper.restGet(dto);
+    }
+
+    @Override
+    public boolean save(UserDto userDto) {
+        UserPo userPo = new UserPo(userDto);
+        return userMapper.restInsert(userPo) == 1;
     }
 }
