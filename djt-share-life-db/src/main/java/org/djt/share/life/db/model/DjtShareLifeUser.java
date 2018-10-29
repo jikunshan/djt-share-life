@@ -100,5 +100,4 @@ public class DjtShareLifeUser {
 				+ ", status=" + status + ", enabled=" + enabled + "]";
 	}
     
-    
 }

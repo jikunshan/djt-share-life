@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-	<properties resource="config.properties" />
+	<properties resource="db/db.properties" />
 	<context id="context1">
 		<commentGenerator>
 			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
@@ -9,10 +9,9 @@
 		</commentGenerator>
 		<jdbcConnection connectionURL="${jdbc_url}"
 			driverClass="${jdbc_driverClassName}" password="${jdbc_password}"
-			userId="${jdbc_username}" />
-		<javaModelGenerator
-			targetPackage="org.djt.share.life.db.model"
-			targetProject="src/main/java" />
+			userId="${jdbc_username}"/>
+		<javaModelGenerator	targetPackage="org.djt.share.life.db.model"	targetProject="src/main/java">
+		</javaModelGenerator>
 		<sqlMapGenerator
 			targetPackage="org.djt.share.life.db.sqlMap"
 			targetProject="src/main/java" />

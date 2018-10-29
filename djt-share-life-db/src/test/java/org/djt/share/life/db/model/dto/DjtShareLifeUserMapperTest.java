@@ -1,21 +1,19 @@
 package org.djt.share.life.db.model.dto;
 
 
+import org.djt.share.life.db.CaseTest;
 import org.djt.share.life.db.dao.DjtShareLifeUserMapper;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
-@ContextConfiguration(locations = "classpath:applicationContext.xml")
-public class DjtShareLifeUserMapperTest extends AbstractJUnit4SpringContextTests {
+public class DjtShareLifeUserMapperTest extends CaseTest {
 	
 	@Autowired
 	DjtShareLifeUserMapper djtShareLifeUserMapper;
 	
 	@Test
 	public void testMybatis() {
-		System.err.println(djtShareLifeUserMapper.selectByPrimaryKey(1l));
+		System.out.println(djtShareLifeUserMapper.selectByPrimaryKey(1l));
 	}
 	
 //	public static void main(String[] args) {

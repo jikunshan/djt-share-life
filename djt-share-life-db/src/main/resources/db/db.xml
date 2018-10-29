@@ -8,10 +8,10 @@
     http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
     http://www.springframework.org/schema/aop
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:property-placeholder location="classpath:config.properties"
+    <context:property-placeholder location="classpath:db/db.properties"
         ignore-unresolvable="true" />
     <!-- 配置数据源 -->
-    <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+    <bean name="sharingDingSource" class="com.alibaba.druid.pool.DruidDataSource"
         init-method="init" destroy-method="close">
         <property name="url" value="${jdbc_url}" />
         <property name="username" value="${jdbc_username}" />
@@ -41,17 +41,5 @@
         <!-- 监控数据库 -->
         <!-- <property name="filters" value="stat" /> -->
         <!--<property name="filters" value="mergeStat" />-->
-    </bean>
-    <!-- myBatis文件 -->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" />
-        <!-- 配置数据库表对应的java实体类 -->
-        <property name="typeAliasesPackage" value="org.djt.share.life.db.model" />
-        <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <property name="mapperLocations" value="classpath:org/djt/share/life/db/sqlMap/*Mapper.xml" />
-    </bean>
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="org.djt.share.life.db.dao" />
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 </beans>
