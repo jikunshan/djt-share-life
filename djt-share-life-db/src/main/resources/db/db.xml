@@ -1,45 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
-    xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-    http://www.springframework.org/schema/tx
-    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
-    http://www.springframework.org/schema/aop
-    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:property-placeholder location="classpath:db/db.properties"
-        ignore-unresolvable="true" />
-    <!-- 配置数据源 -->
-    <bean name="sharingDingSource" class="com.alibaba.druid.pool.DruidDataSource"
-        init-method="init" destroy-method="close">
-        <property name="url" value="${jdbc_url}" />
-        <property name="username" value="${jdbc_username}" />
-        <property name="password" value="${jdbc_password}" />
-        <!-- 初始化连接大小 -->
-        <property name="initialSize" value="0" />
-        <!-- 连接池最大使用连接数量 -->
-        <property name="maxActive" value="20" />
-        <!-- 连接池最小空闲 -->
-        <property name="minIdle" value="0" />
-        <!-- 获取连接最大等待时间 -->
-        <property name="maxWait" value="60000" />
-        <property name="validationQuery" value="${validationQuery}" />
-        <property name="testOnBorrow" value="false" />
-        <property name="testOnReturn" value="false" />
-        <property name="testWhileIdle" value="true" />
-        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
-        <property name="timeBetweenEvictionRunsMillis" value="60000" />
-        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
-        <property name="minEvictableIdleTimeMillis" value="25200000" />
-        <!-- 打开removeAbandoned功能 -->
-        <property name="removeAbandoned" value="true" />
-        <!-- 1800秒，也就是30分钟 -->
-        <property name="removeAbandonedTimeout" value="1800" />
-        <!-- 关闭abanded连接时输出错误日志 -->
-        <property name="logAbandoned" value="true" />
-        <!-- 监控数据库 -->
-        <!-- <property name="filters" value="stat" /> -->
-        <!--<property name="filters" value="mergeStat" />-->
-    </bean>
-</beans>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration
+
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- 元素首次出现必须符合下面的顺序 -->
+	<!-- (properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?) -->
+	<!-- 加载常量配置信息 -->
+	<!-- 可以覆盖重写，用于解密-http://www.mybatis.org/mybatis-3/zh/configuration.html
+		·在 properties 元素体内指定的属性首先被读取。
+		·然后根据 properties 元素中的 resource 属性读取类路径下属性文件或根据 url 属性指定的路径读取属性文件，并覆盖已读取的同名属性。
+		·最后读取作为方法参数传递的属性，并覆盖已读取的同名属性。 -->
+	<properties resource="config/db.properties"/>
+	<!-- 为实体类定义别名 -->
+	<!-- <typeAliases>
+		<typeAlias alias="userModel"  type="com.bestcxx.stu.springmvc.model.UserModel"/>
+		<typeAlias alias="userModelTwo"  type="com.bestcxx.stu.springmvc.model.UserModelTwo"/>
+	</typeAliases> -->
+
+	<!-- 使用 spring 配置数据库的时候，下面就可以注释掉了 -->
+	<!-- 定义数据库信息，默认使用 development 数据库构建环境 -->
+	<environments default="development">
+		<environment id="development">
+			<!-- 采用 jdbc 事务管理 -->
+			<transactionManager type="JDBC"/>
+			<!-- 配置数据库链接信息 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driverClassName}"/>
+				<property name="url" value="${jdbc.url}"/>
+				<property name="username" value="${jdbc.username}"/>
+				<property name="password" value="${jdbc.password}"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- 定义映射器 -->
+	<mappers>
+		<!-- 使用这个方案，可以单独指定Mapper的位置 -->
+		<!-- <mapper resource="mybatis/mappings/UserModelMapper.xml"/>
+		<mapper resource="mybatis/mappings/UserModelTwoMapper.xml"/> -->
+		<!-- 使用下面两个个方法，Mapper.xml 文件位置必须在和其内部 <mapper namespace="">的类在一起，当然，使用注解模式的话，Mapper.xml文件就没有必要存在了 -->
+		<!-- 直接指定一个包去扫描-内保包含多个Mapper配置- -->
+		<!-- <package name="com.bestcxx.stu.springmvc.mapper"/> -->
+		<!-- class 级别的指定 -->
+		<mapper class="com.bestcxx.stu.springmvc.mapper.UserModelMapper"/>
+		<mapper class="com.bestcxx.stu.springmvc.mapper.UserModelTwoMapper"/>
+	</mappers>
+
+</configuration>

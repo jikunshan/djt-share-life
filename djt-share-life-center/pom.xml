@@ -127,6 +127,7 @@
 
     </dependencies>
     <build>
+    	<finalName>share</finalName>
     	<filters>
             <filter>src/main/env/${env-environment}/config.properties</filter>
         </filters>

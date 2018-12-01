@@ -1,71 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:rdb="http://www.dangdang.com/schema/ddframe/rdb"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       xmlns:sharding="http://shardingsphere.io/schema/shardingsphere/sharding"
+       xmlns:master-slave="http://shardingsphere.io/schema/shardingsphere/masterslave"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
                         http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context.xsd
                         http://www.springframework.org/schema/tx
                         http://www.springframework.org/schema/tx/spring-tx.xsd
-                        http://www.dangdang.com/schema/ddframe/rdb
-                        http://www.dangdang.com/schema/ddframe/rdb/rdb.xsd">
-   <!-- myBatis文件 -->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="sharingDingSource" />
-        <!-- 配置数据库表对应的java实体类 -->
-        <property name="typeAliasesPackage" value="org.djt.share.life.db.model" />
-        <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <property name="mapperLocations" value="classpath:org/djt/share/life/db/sqlMap/*Mapper.xml" />
-    </bean>
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="org.djt.share.life.db.dao" />
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
-    </bean>
+                        http://shardingsphere.io/schema/shardingsphere/sharding 
+                        http://shardingsphere.io/schema/shardingsphere/sharding/sharding.xsd
+                        http://shardingsphere.io/schema/shardingsphere/masterslave
+                        http://shardingsphere.io/schema/shardingsphere/masterslave/master-slave.xsd">
+    <context:annotation-config />
+   
+    <bean id="ds_master1_slave1" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://47.106.233.210:3306/share_life" />
+        <property name="username" value="share_life" />
+        <property name="password" value="djt@shareLife" />
+    </bean> 
 
-    <!--mybatis-->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="mapperLocations" value="classpath:xmlmapper/*.xml"/>
-        <property name="dataSource" ref="shardingDataSource"/>
-        <!-- 配置Mybatis配置文件 -->
-        <property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"/>
-    </bean>
-    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
-        <constructor-arg index="0" ref="sqlSessionFactory"/>
-    </bean>
-    <!-- 注解Mapper scanner -->
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.lc.sharding.mybatismapper"/>
-        <property name="sqlSessionTemplateBeanName" value="sqlSession"/>
-    </bean>
+<!--     <bean id="randomStrategy" class="io.shardingsphere.core.api.algorithm.masterslave.RandomMasterSlaveLoadBalanceAlgorithm" /> -->
 
-    <!-- 事务-->
-    <bean id="txManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="shardingDataSource"/>
-    </bean>
-    <tx:annotation-driven transaction-manager="txManager"/>
-    <!--读写分离-->
-    <rdb:master-slave-data-source id="rbb_112" master-data-source-ref="database_112"
-                                  slave-data-sources-ref="database_slave_112"/>
-    <rdb:master-slave-data-source id="rbb_103" master-data-source-ref="database_103"
-                                  slave-data-sources-ref="database_slave_103"/>
-    <!--分库策略-->
-    <rdb:strategy id="databaseShardingStrategy" sharding-columns="business_id"
-                  algorithm-expression="rbb_${business_id.longValue()}"/>
-    <!--分表策略-->
-    <rdb:strategy id="tableShardingStrategy" sharding-columns="user_id,order_id"
-                  algorithm-class="com.lc.sharding.algorithm.MultipleKeysTableShardingAlgorithmImpl"/>
+    <!-- <master-slave:data-source id="ds_ms0" master-data-source-name="ds_master0" slave-data-source-names="ds_master0_slave0, ds_master0_slave1" strategy-ref="randomStrategy" />
+    <master-slave:data-source id="ds_ms1" master-data-source-name="ds_master1" slave-data-source-names="ds_master1_slave0, ds_master1_slave1" strategy-ref="randomStrategy" />
+ -->
+   <!--  <sharding:inline-strategy id="databaseStrategy" sharding-column="user_id" algorithm-expression="ds_ms$->{user_id % 2}" /> -->
+    <sharding:inline-strategy id="orderTableStrategy" sharding-column="user_id" algorithm-expression="t_order$->{user_id % 2}" />
+   <!--  <sharding:inline-strategy id="orderItemTableStrategy" sharding-column="order_id" algorithm-expression="t_order_item$->{order_id % 2}" /> -->
 
-    <rdb:data-source id="shardingDataSource">
-        <rdb:sharding-rule data-sources="rbb_112,rbb_103">
-            <rdb:table-rules>
-                <rdb:table-rule logic-table="t_order" actual-tables="t_order_${0..3}" database-strategy="databaseShardingStrategy"
-                                table-strategy="tableShardingStrategy"/>
-            </rdb:table-rules>
-        </rdb:sharding-rule>
-        <rdb:props>
-            <prop key="metrics.enable">true</prop>
-            <prop key="sql.show">true</prop>
-        </rdb:props>
-    </rdb:data-source>
-</beans
+    <sharding:data-source id="shardingDataSource">
+        <sharding:sharding-rule data-source-names="ds_master1_slave1">
+            <sharding:table-rules>
+                <sharding:table-rule logic-table="t_order" actual-data-nodes="ds_master1_slave1.t_order$->{0..1}" table-strategy-ref="orderTableStrategy" generate-key-column-name="user_id" />
+                <!-- <sharding:table-rule logic-table="t_order_item" actual-data-nodes="ds_ms$->{0..1}.t_order_item$->{0..1}" database-strategy-ref="databaseStrategy" table-strategy-ref="orderItemTableStrategy" generate-key-column-name="order_item_id" /> -->
+            </sharding:table-rules>
+        </sharding:sharding-rule>
+    </sharding:data-source>
+</beans>

@@ -3,6 +3,7 @@ package com.djt.share.life.api.beans.common.po;
 import com.djt.share.life.api.beans.base.BasePo;
 import com.djt.share.life.api.beans.common.dto.UserDto;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -13,6 +14,7 @@ import lombok.ToString;
 @Data
 @NoArgsConstructor
 @ToString
+@EqualsAndHashCode(callSuper=false)
 public class UserPo extends BasePo {
     private static final long serialVersionUID = -1255433941231793424L;
 

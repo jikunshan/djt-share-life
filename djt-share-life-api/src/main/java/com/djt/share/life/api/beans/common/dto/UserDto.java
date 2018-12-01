@@ -2,6 +2,7 @@ package com.djt.share.life.api.beans.common.dto;
 
 import com.djt.share.life.api.beans.base.BaseDto;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
@@ -9,8 +10,13 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper=false)
 public class UserDto extends BaseDto {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8464680643767299068L;
+	/**
      * 用户名
      */
     private String userName;
@@ -21,6 +27,4 @@ public class UserDto extends BaseDto {
     /**
      * 验证码
      */
-    private String yzm;
-
 }
